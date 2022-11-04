@@ -1,11 +1,11 @@
 import express from "express";
-import { signup } from "../controllers/auth";
+import { signup, signin } from "../controllers/auth";
 
 const router = express.Router();
 
 router.post("/signup", signup);
 
-// router.get("/singin", test);
+router.post("/signin", signin);
 
 // router.get("/google", test);
 
